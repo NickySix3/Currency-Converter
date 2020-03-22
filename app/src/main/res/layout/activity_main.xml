@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConverterBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curren"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ConvertFrom"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/convert_from"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/FROM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/FROM"
+        android:layout_width="88dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConvertFrom">
+
+        <RadioButton
+            android:id="@+id/USD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/usd"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/JMD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/jmd"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/EUR1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/eur"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/CAD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/cad"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="29dp"
+        android:autofillHints=""
+        android:backgroundTint="#FAFAFA"
+        android:ems="10"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:labelFor="@id/Input"
+        android:text="@string/input"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ConvertTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FROM" />
+
+    <TextView
+        android:id="@+id/ConvertTo"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="96dp"
+        android:text="@string/convert_to"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input" />
+
+    <RadioGroup
+        android:id="@+id/TO"
+        android:layout_width="88dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConvertTo">
+
+        <RadioButton
+            android:id="@+id/USD2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/usd"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/JMD2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/jmd"
+            android:textColor="#FCFCFC"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/EUR2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/eur"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/CAD2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/cad"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="6dp"
+        android:outlineProvider="none"
+        android:text="@string/answer"
+        android:textAlignment="center"
+        android:textColor="#C2185B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TO" />
+
+    <Button
+        android:id="@+id/Convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/ic_launcher_mine_background"
+        android:text="@string/convert"
+        android:textColor="#FFE900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Output"
+        app:layout_constraintTop_toBottomOf="@+id/ConvertTo" />
+
+    <TextView
+        android:id="@+id/RateUsedTEXT"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/rate_used"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/RateUsed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Output" />
+
+    <TextView
+        android:id="@+id/RateUsed"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="184dp"
+        android:background="#007B1FA2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RateUsedTEXT"
+        app:layout_constraintTop_toBottomOf="@+id/Output" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RateUsed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

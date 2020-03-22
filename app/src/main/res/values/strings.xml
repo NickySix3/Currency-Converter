@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">Currency Converter</string>
+    <string name="convert_to" translatable="false">CONVERT TO</string>
+    <string name="input" translatable="false">INPUT</string>
+    <string name="convert_from" translatable="false">CONVERT FROM</string>
+    <string name="usd" translatable="false">USD</string>
+    <string name="jmd" translatable="false">JMD</string>
+    <string name="eur" translatable="false">EUR</string>
+    <string name="cad" translatable="false">CAD</string>
+    <string name="rate_used">RATE USED =</string>
+    <string name="convert">CONVERT</string>
+    <string name="reset">RESET</string>
+    <string name="answer">ANSWER</string>
+</resources>
